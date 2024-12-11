@@ -1,0 +1,46 @@
+---
+interface Props {
+	title: string;
+   image_href: string;
+   href: string;
+}
+
+const { title, image_href, href } = Astro.props;
+
+---
+
+
+<a href=`${href}` class={`md:w-[32%] w-full h-32 rounded-lg flex p-4 bg-cover`} style=`background-image: url(${image_href});`>
+
+        <div class="flex">
+          <h3 class="md:text-2xl text-xl text-white font-black mt-auto">
+            { title }
+          </h3>
+        </div>
+        <div class="rounded-full w-12 h-12 bg-white flex ml-auto mr-2">
+          <svg
+            class="m-auto h-6 w-6"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 23 23"
+            style="enable-background:new 0 0 23 23;"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: none;
+                stroke: #000000;
+                stroke-width: 2;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+              }
+            </style>
+            <path class="st0" d="M6.5,16.5l10-10"></path>
+            <path class="st0" d="M6.5,6.5h10v10"></path>
+          </svg>
+        </div>
+      </a>

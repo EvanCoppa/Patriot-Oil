@@ -1,0 +1,21 @@
+---
+interface Props {
+	title: string;
+   image_href: string;
+   href: string;
+}
+
+const { title, image_href, href } = Astro.props;
+
+---
+
+<a href=`${href}` class="rounded-lg overflow-clip ">
+    <div class="md:h-[370px] h-64 bg-gray-200 md:w-[300px] relative ">
+      <div class="w-full h-full overflow-clip">
+        <img src=`${image_href}` alt=`Rochester Roofing ${title} at Summit Exteriors` class="object-cover transition-transform duration-300 hover:scale-105 h-full w-full">
+      </div>
+      <div class="bottom-0 bg-white absolute m-4 rounded-full px-4 py-2">
+         <h4 class="text-black font-[1000] text-xs">{title}</h4>
+      </div>
+    </div>
+</a>

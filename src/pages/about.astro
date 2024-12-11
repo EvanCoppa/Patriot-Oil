@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro"
+import CallToAction from "../components/Index/CallToAction.astro"
+import TeamCard from "../components/Cards/TeamCard.astro"
+
+---
+
+<Layout title="About Summit Exteriors" description="Summit Exteriors is a local, family-owned roofing company operating in Rochester NY. We have over 50 years of combined roofing experience and guarantee best roofing work in Rochester" heading="The Best Roofing Work in Rochester New York" >
+<div class="flex flex-col mt-12">
+<div class="flex flex-col-reverse md:flex-row ">
+  <div class="md:w-1/2 m-auto p-4 max-w-[500px]">
+    <h1 class="text-6xl md:text-start text-center font-black mb-2">We Are Summit</h1>
+    <p>Founded in 2019 our CEO Andrew Delaus set out to change the roofing industry in Rochester. By creating a roofing system with the highest quality materials, we are trying to move the industry away from cut-and-paste roofs. You can trust us as the experts in roofing and exteriors with over +100 years of experience combined with our talented team.
+    </p>
+  </div>
+  <img src="/teamphoto.png" alt="Summit Exteriors Rochester Roof Install" class="md:w-1/2 md:h-auto h-[300px]">
+</div>
+
+<!-- <div class="flex flex-col md:flex-row-reverse my-12">
+  <div class="md:w-1/2 m-auto p-4 max-w-[500px] ">
+    <h1 class="text-5xl font-black mb-6 m-auto text-center">We Are Summit</h1>
+    <p>Founded in 2019 our CEO Andrew Delaus set out to change the roofing industry in Rochester. By creating a roofing system with the highest quality materials, we are trying to move the industry away from cut-and-paste roofs. You can trust us as the experts in roofing and exteriors with over +100 years of experience combined with our talented team.
+    </p>
+  </div>
+  <div class="md:w-1/2">
+    <img src="/SummitExteriorsRochesterRoofInstall.png" alt="Summit Exteriors Rochester Roof Install" class=" w-[500px] mx-auto">
+  </div>
+</div> -->
+
+<div class="flex flex-col md:flex-row-reverse my-12 ">
+  
+  <div class="md:w-1/2 m-auto p-4 max-w-[500px]">
+    <h1 class="text-5xl font-black m-auto text-center mb-6">Our Mission</h1>
+    <p>At Summit, we truly believe that satisfying our customers comes before all else. We have been serving the Rochester Community since 2016. As we grow the Summit family and brand, we constantly incorporate new industry leading technology to better suit our customers! When choosing a company to trust with the task of building your roof, there is no place that will put your best interest first like we will. Call our office today and we will partner one of our exterior designers with you, to guide you through this process.
+    </p>
+  </div>
+  <div class="md:w-1/2">
+    <img src="/SummitExteriorsRochesterRoofInstall.png" alt="Summit Exteriors Rochester Roof Install" class=" w-[500px] mx-auto">
+  </div>
+</div>
+
+ 
+
+ 
+ 
+  <div class="max-w-[95vw] mx-auto p-4 pt-8" >
+    
+
+    <div class="max-w-7xl mx-auto p-4" id="team">
+      <h2 class="text-center font-[1000] md:text-6xl text-3xl">MEET OUR LEADERS</h2>
+      <div class="flex flex-col gap-4 md:flex-row justify-evenly my-8">
+        <TeamCard name="Andrew DeLaus" title="CEO and Founder" image_href="/team/Andrew.png" href="" />
+        <TeamCard name="Brittany Frederick" title="Vice President" image_href="/team/brittany.webp" href="" />
+        <TeamCard name="Tony LaMarca" title="Sales Team Leader" image_href="/team/Tony.png" href="" />
+        <TeamCard name="Thomas DeLaus" title="Production Manager" image_href="/team/thomas.png" href="" />
+
+      </div>
+    </div>
+  
+
+    <div class="max-w-7xl mx-auto p-4">
+      <h2 class="text-center font-[1000] md:text-6xl text-3xl">OUR PROFESSIONAL TEAM</h2>
+      <div class="flex flex-col gap-4 md:flex-row flex-wrap justify-evenly my-8">
+        <TeamCard name="Nick Biuso" title="Customer Executive" image_href="/team/Nick.png" href="" />
+        <TeamCard name="Johnathan Brady" title="Sales Team Representative" image_href="/team/Jonathan.png" href="" />
+        <TeamCard name="Tracy DeLaus" title="Sales Team Representative" image_href="/team/Tracy.png" href="" />
+        <TeamCard name="Alex Natal" title="Sales Team Representative" image_href="/team/Alex.png" href="" />
+        
+     
+      </div>
+      
+    </div>
+ 
+    <!-- <CallToAction/> -->
+  
+  </div>
+  
+</div>
+</Layout>
+

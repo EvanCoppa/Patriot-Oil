@@ -1,0 +1,48 @@
+---
+interface Props {
+	title: string;
+  content: string;
+  href: string;
+  image_href: string;
+}
+
+const { title, content, href, image_href } = Astro.props;
+
+---
+
+
+<article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg sm:w-[27vw] w-[90vw]"  >
+    <a
+    class="bg-gray-800 block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-red-500/50 hover:shadow-red-500/10"
+    href="/services/roofing"
+  >
+  <img width="50" height="50" src="https://img.icons8.com/ios/100/EF4444/roofing.png" alt="roofing"/>          <h2 class="mt-4 text-xl font-bold text-white">{}</h2>
+
+    <p class="mt-1 text-sm text-gray-300">
+      We offer a wide range of roofing services from repairs to full replacements. Using premium Owens Corning and IKO Dynasty shingles we ware 
+    </p>
+  </a>
+
+
+
+   <!-- <a href={href}>
+
+  <img 
+  alt="Office"
+  src={image_href}
+  class="h-56 w-full object-cover z-[-1]"
+/>
+
+<div class="bg-white p-4 sm:p-6">
+
+  <a href={href}>
+    <h3 class="mt-0.5 text-lg text-gray-900">{title}</h3>
+  </a>
+
+  <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+    
+    { content } 
+  </p>
+</div></a> -->
+   
+  </article>

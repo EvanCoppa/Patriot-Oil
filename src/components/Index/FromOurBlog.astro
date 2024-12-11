@@ -1,0 +1,39 @@
+---
+ import ArticleCard from "../Cards/ArticleCard.astro";
+ 
+ const title = "Blog Posts";
+const allPosts = await Astro.glob('../../pages/posts/*.md');
+---
+
+<div class="w-full flex flex-col mb-48">
+    <div class="mx-auto">
+        <h2 class="font-[1000] text-5xl text-center md:text-start">LATEST FROM THE BLOG</h2>
+    
+        <div class="flex flex-wrap flex-col md:flex-row gap-4 mx-auto max-w-[90vw] justify-around my-12 ">
+        
+            {allPosts.slice(0, 3).map(post => (
+                <ArticleCard
+                  href={"" + post.url}
+                  image_href={post.frontmatter.image.url}
+                  content={post.frontmatter.content}
+                  title={post.frontmatter.title}
+                  date={post.frontmatter.date}
+                />
+              ))}
+              
+        
+        </div>
+
+    </div>
+<a href="/articles" class="flex mx-auto">
+ <button class="mx-auto w-64 h-16 rounded-md bg-red-700 font-black text-white text-2xl">
+    Read Our Blog
+
+ </button>
+</a>
+</div>
+
+
+
+
+

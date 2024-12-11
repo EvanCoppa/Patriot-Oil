@@ -1,0 +1,319 @@
+---
+import heroImage from "../../images/hero2.png";
+import heroCloud from "../../images/cloud.webp";
+import { Image } from "astro:assets";
+---
+
+<script type="module">
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const isMobile = window.innerWidth <= 800;
+    console.log(isMobile);
+    const desktopContentElements =
+      document.querySelectorAll(".desktop-content");
+    desktopContentElements.forEach((element) => {
+      if (isMobile) {
+        element.style.display = "none";
+      } else {
+        element.style.display = "flex";
+      }
+    });
+  });
+</script>
+
+<div class="md:h-screen relative">
+  <div class="hero w-full flex relative">
+    <div class="mx-auto w-full md:px-6 px-2 md:pt-32 pt-20 max-w-6xl">
+      <div class="container flex flex-col">
+        <h1 class="font-bold md:text-6xl text-3xl">
+          Only The Best <br /> Rochester's #1 <br /> Roofing Choice. <br
+          />
+          <span class="text-white">Summit Exteriors </span>
+        </h1>
+        <div class="relative flex flex-col desktop-content">
+        <a href="/booking" class="z-20">
+
+          <button
+          class="border-2 font-semibold border-white text-white p-1 w-48 rounded-md md:mt-8 mt-4"
+          >Get your free estimate</button
+        >
+        </a>
+        
+          <!-- <svg class="absolute w-[56px] h-[56px] scale-y-[-1] left-[-56px]" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.1 85.9" style="enable-background:new 0 0 43.1 85.9;" xml:space="preserve">
+                <path stroke-linecap="round" stroke-linejoin="round" class="st0 draw-arrow" d="M11.3,2.5c-5.8,5-8.7,12.7-9,20.3s2,15.1,5.3,22c6.7,14,18,25.8,31.7,33.1"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-1" d="M40.6,78.1C39,71.3,37.2,64.6,35.2,58"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-2" d="M39.8,78.5c-7.2,1.7-14.3,3.3-21.5,4.9"></path>
+              </svg> -->
+          <div class="t_arrow-svg w-embed">
+            <style>
+              .arrow {
+                width: 56px;
+                height: 56px;
+                margin: 0 auto;
+                transform: scaleY(-1);
+                position: absolute;
+                left: -56px;
+                bottom: 5%;
+              }
+              svg .draw-arrow {
+                -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+                stroke-width: 5;
+                stroke: #fff;
+                fill: none;
+                stroke-dasharray: 400;
+                stroke-dashoffset: 400;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                -webkit-animation-name: draw;
+                animation-name: draw;
+              }
+              svg .draw-arrow.tail-1 {
+                -webkit-animation-delay: 2.25s;
+                animation-delay: 2.25s;
+              }
+              svg .draw-arrow.tail-2 {
+                -webkit-animation-delay: 2.35s;
+                animation-delay: 2.35s;
+              }
+
+              @-webkit-keyframes draw {
+                to {
+                  stroke-dashoffset: 0;
+                }
+              }
+
+              @keyframes draw {
+                to {
+                  stroke-dashoffset: 0;
+                }
+              }
+            </style>
+            <svg
+              class="arrow"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 43.1 85.9"
+              style="enable-background:new 0 0 43.1 85.9;"
+              xml:space="preserve"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="st0 draw-arrow"
+                d="M11.3,2.5c-5.8,5-8.7,12.7-9,20.3s2,15.1,5.3,22c6.7,14,18,25.8,31.7,33.1"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="draw-arrow tail-1"
+                d="M40.6,78.1C39,71.3,37.2,64.6,35.2,58"></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="draw-arrow tail-2"
+                d="M39.8,78.5c-7.2,1.7-14.3,3.3-21.5,4.9"></path>
+            </svg>
+          </div>
+
+          <h2 class="font-bold text-white mt-2">NO FEES. NO OBLIGATIONS</h2>
+        </div>
+
+        <div
+          class="bg-white h-10 md:h-12 mt-4 rounded-full md:w-[410px] flex w-[220px] z-10"
+        >
+          <div class="m-auto flex justify-evenly md:w-full">
+            <div class="flex gap-2">
+              <div class="flex gap-0.5 text-amber-400 h-[20px] my-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="font-bold text-xl text-red-700">Google</h3>
+            </div>
+            <div class="flex gap-2 desktop-content">
+              <div class="flex gap-0.5 text-amber-400 h-[20px] my-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="font-bold text-xl text-red-700">Angi</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="/hero2.webp"
+      alt="hero"
+      class="absolute bottom-0 object-cover left-0 w-full h-1/2"
+    />
+    <Image
+      src={heroCloud}
+      alt="hero"
+      class="absolute top-[-10%] w-[50%] right-0 h-1/2"
+    />
+    <Image
+      src={heroCloud}
+      alt="hero"
+      class="absolute top-0 scale-x-[-1] left-0 w-[50%] h-1/2"
+    />
+  </div>
+  <div class="w-full md:h-[15%] flex">
+    <div
+      class="md:w-[80%] w-[95%] md:h-full h-[70px] bg-white rounded-xl shadow-md md:translate-y-[-10vh] translate-y-[-5vh] mx-auto flex"
+    >
+      <div class="flex justify-evenly m-auto w-full">
+        <div class="flex flex-col text-center">
+          <h3 class="font-[1000] text-xl md:text-5xl">1000+</h3>
+          <h4 class="font-black text-xs md:text-2xl text-red-700">
+            Roofs Installed
+          </h4>
+        </div>
+        <div class="flex flex-col text-center">
+          <h3 class="font-[1000] text-xl md:text-5xl">9+</h3>
+          <h4 class="font-black text-xs md:text-2xl text-red-700">
+            Years of Service
+          </h4>
+        </div>
+        <div class="flex flex-col text-center">
+          <h3 class="font-[1000] text-xl md:text-5xl">147+</h3>
+          <h4 class="font-black text-xs md:text-2xl text-red-700">
+            5-Star Reviews
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero {
+    background-image: linear-gradient(#015a92, #aacee1);
+    height: 60vh;
+    width: 100vw;
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      --tw-bg-opacity: 1;
+      background-image: linear-gradient(#015a92, #aacee1);
+      height: 90vh;
+      width: 100vw;
+    }
+
+    .hero .container {
+      width: 100%;
+    }
+  }
+
+  .hero h1 {
+    font-weight: 1000;
+    color: rgba(255, 255, 255, 0.702);
+  }
+
+  .hero .container {
+    width: auto;
+    margin: 0 auto;
+  }
+</style>

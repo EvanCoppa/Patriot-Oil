@@ -1,0 +1,35 @@
+---
+
+interface Props {
+    title: string;
+    details: string;
+    image_href: string;
+    number: number;
+    is_last: boolean;
+}
+
+const {title, details, image_href, number, is_last } = Astro.props;
+
+ 
+---
+
+
+
+
+
+
+<div class="flex gap-6 max-w-6xl mx-auto">
+    <div class="flex flex-col">
+        <div class="rounded-full w-12 h-12 border flex"><h4 class="m-auto">{number}</h4></div>
+        <div class=`h-[80%] w-1 bg-gray-100 mx-auto mt-2 rounded-full   ${is_last ? "hidden" : "visable"}`></div>
+    </div>
+    <div class="flex flex-col md:flex-row mt-2">
+        <div class="flex flex-col w-1/2">
+            <h3 class="font-bold text-2xl text-black/80">{title}</h3>
+        <p class="text-red-900/60 text-lg font-semibold max-w-[75%]">{details}
+            </p>
+        </div>
+       
+             <img src={image_href} alt={image_href} class="rounded-2xl h-[300px] w-1/2">
+     </div>
+</div>

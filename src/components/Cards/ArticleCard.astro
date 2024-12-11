@@ -1,0 +1,37 @@
+---
+interface Props {
+	title: string;
+  content: string;
+  date: string;
+  href: string;
+  image_href: string;
+}
+
+const { title, content, href, image_href, date } = Astro.props;
+
+---
+
+
+<article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg sm:w-[27vw] w-[90vw]"  >
+  <a href={href}>
+
+  <img 
+  alt="Office"
+  src={image_href}
+  class="h-56 w-full object-cover z-[-1]"
+/>
+
+<div class="bg-white p-4 sm:p-6">
+  <p  class="block text-xs text-gray-500"> {date} </p>
+
+  <a href={href}>
+    <h3 class="mt-0.5 text-lg text-gray-900">{title}</h3>
+  </a>
+
+  <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+    
+    { content } 
+  </p>
+</div></a>
+   
+  </article>

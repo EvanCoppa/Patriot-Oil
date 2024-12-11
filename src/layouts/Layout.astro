@@ -1,0 +1,63 @@
+---
+import NavHeader from "../components/NavHeader.svelte";
+import { ViewTransitions } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+  heading: string;
+  description: string;
+ }
+
+const { title } = Astro.props;
+const {heading} = Astro.props;
+const {description} = Astro.props;
+
+import { SEO } from "astro-seo";
+
+
+
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+     <link rel="icon" href="/fav.png" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="sitemap" href="/sitemap-index.xml" />
+ 
+    <SEO
+    title={title}
+    titleDefault= "Summit Exteriors"
+    description={description}
+     charset="utf-8"
+    openGraph={{
+      basic: {
+        title: `${heading}`,
+        type: `website`,
+        image: "https://summitexteriors.com/public/roofing.png",
+        url: "https://summitexteriors.com",
+      }
+    }}
+    twitter={{
+      creator: "@summitexteriors",
+      site: "@summitexteriors",
+      card: "summary_large_image",
+      title: `${heading}`,
+      description: `${description}`,
+      image: "https://summitexteriors.com/roofing.png",
+    }}
+    
+  />
+    <ViewTransitions />
+    <meta name="google-site-verification" content="qFYAqZmRZwTQnwjPaxJm7wX3dH00NaSK4AXGEFYB5_o" />
+
+   </head>
+
+  <body class="overscroll-none	">
+    <NavHeader client:only />
+
+    <slot />
+    <Footer />
+  </body>
+</html>
