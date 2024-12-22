@@ -29,10 +29,10 @@
 
     if (scrollY > prevScrollY) {
       // Scrolling down
-      document.querySelector("header").style.top = "-64px";
+      // document.querySelector("header").style.top = "-64px";
     } else {
       // Scrolling up
-      document.querySelector("header").style.top = "0";
+      // document.querySelector("header").style.top = "0";
     }
     if (window.location.pathname === "/") {
       if (scrollY > 1) {
@@ -85,16 +85,16 @@
 
 </script>
 
-<header class="fixed w-screen top-0 z-50">
+<header class="fixed w-screen top-0 z-50 bg-white bg-opacity-20">
   <div class="mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="md:flex md:items-center md:gap-12">
         <a class="block text-[#C2262C]" href="/">
           {#if isTransparent == true && window.location.pathname == "/"}
-           <img src="/logo-white.png" alt="Summit Exteriors Logo" class="w-[70px]" />
+           <img src="/logo-white.png" alt="Summit Exteriors Logo" class="w-[45px]" />
             
        {:else}
-          <img src="/logo.png" alt="Summit Exteriors Logo" class="w-[70px]" />
+          <img src="/logo.png" alt="Summit Exteriors Logo" class="w-[45px]" />
       {/if}        
     </a>
        </div>
@@ -170,7 +170,7 @@
       
       <div class="flex items-center gap-4">
         <div class="sm:flex sm:gap-4">
-          <div onclick="window.location.href='https://calendly.com/summitexteriorsny/roofing-estimate?hide_gdpr_banner=1&primary_color=ff0000&month=2024-01'"
+          <div onclick="window.location.href='/booking'"
             class="rounded-md cursor-default bg-red-600 hover:bg-red-500 transition-all duration-200 px-5 py-2.5 text-sm font-semibold text-white shadow"
            >
             Schedule Now
