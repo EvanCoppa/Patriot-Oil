@@ -7,7 +7,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 ---
 
 <Layout title={title} description="Summit Exterior's expert roofing articles to learn more about Roofing in Rochester. Find out about how to pick the best roof for you and even how to make the right choice when shoping for a new roof" heading="Summit Exteriors does the the Best Roofing Work in Rochester New York" >
-<div class="max-w-[90vw] mx-auto  mt-32">
+<!-- <div class="max-w-[90vw] mx-auto  mt-32">
   <h1>Learn More About Roofing in Rochester</h1>
 </div>
 <div class="flex flex-wrap gap-4 mx-auto max-w-[90vw] justify-around ">
@@ -15,6 +15,6 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
   {allPosts.map(post => <ArticleCard href={post.url} image_href={post.frontmatter.image.url} content={post.frontmatter.content} title={post.frontmatter.title} date={post.frontmatter.date}/>)}
 
 
-</div>
+</div> -->
  </Layout>
 
