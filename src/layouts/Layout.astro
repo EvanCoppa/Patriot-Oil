@@ -15,7 +15,7 @@ const {description} = Astro.props;
 
 import { SEO } from "astro-seo";
 
-
+import Analytics from '@vercel/analytics/astro'
 
 ---
 
@@ -51,7 +51,7 @@ import { SEO } from "astro-seo";
   />
     <ViewTransitions />
     <meta name="google-site-verification" content="qFYAqZmRZwTQnwjPaxJm7wX3dH00NaSK4AXGEFYB5_o" />
-
+    <Analytics/>
    </head>
 
   <body class="overscroll-none	">
