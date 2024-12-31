@@ -217,14 +217,7 @@
           </a>
         </li>
 
-        <li>
-          <a
-            class="text-red-700 font-bold transition hover:text-[#C2262C]/75"
-            href="/financing"
-          >
-            Financing
-          </a>
-        </li>
+        
 
         <li>
           <a
