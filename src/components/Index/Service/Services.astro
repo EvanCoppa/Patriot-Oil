@@ -1,0 +1,69 @@
+---
+
+import ServiceCard from "./ServiceCard.astro";
+
+---
+
+
+  <section class="bg-gray-900 text-white pt-12">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-3xl text-white font-bold sm:text-4xl">What We Can Offer You</h2>
+  
+        <p class="mt-4 text-gray-300">
+          Here at Patriot Discount Oil we offer a wide range of services to fit your needs. We offer services from Oil Delivery to Heating System Maintenance. We are here to help you with all your needs.
+        </p>
+      </div>
+  
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        <ServiceCard
+          title="Oil Delivery"
+          content="Eliminate the worry of running out of oil with regular, pre-arranged deliveries timed to your usage patterns. This ensures a consistent heat supply and prevents unexpected disruptions."
+          href="/services/roofing"
+          image_href="https://img.icons8.com/?size=100&id=3604&format=png&color=EF4444"></ServiceCard>
+
+        <ServiceCard 
+          title="Emergency Deliveries & Maintenance"
+          content=" Experience peace of mind with 24/7 emergency delivery services. Receive prompt assistance when you unexpectedly run low on oil, especially during critical periods like extreme cold weather."
+          href="/services/roofing"
+          image_href="https://img.icons8.com/ios/100/EF4444/solar-panel--v1.png"></ServiceCard>
+
+        <ServiceCard
+          title="Heating System Maintenance"
+          content="Ensure optimal heating system performance and longevity with professional maintenance services. Regular tune-ups, cleaning, and inspections can improve efficiency, prevent breakdowns, and extend the lifespan of your equipment."
+          href="/services/roofing"
+          image_href="https://img.icons8.com/ios/100/EF4444/maintenance--v1.png"></ServiceCard>
+
+        <ServiceCard
+          title="Wide Service Area"
+          content="Patriot Discount Oil proudly serves a wide range of towns and cities in Connecticut, including Middletown, Portland, Middlefield, Cromwell, East Hampton, Haddam, Durham, Meriden, Rocky Hill, and Higganum."
+          href="/services/roofing"
+          image_href="https://img.icons8.com/?size=100&id=343&format=png&color=EF4444"></ServiceCard>
+        
+  
+        <ServiceCard
+          title="Customer Service & Support"
+          content="We offer framing services for new construction and additions. We also offer framing repair services for damaged or rotted wood anywhere on your property."
+          href="/services/roofing"
+          image_href="https://img.icons8.com/?size=100&id=25643&format=png&color=EF4444"></ServiceCard>
+
+
+        <ServiceCard
+
+          title="And More!"
+          content="Packed in with other jobs we offer services such as windows fencing and more!"
+          href="/services/roofing"
+          image_href="https://img.icons8.com/?size=100&id=123331&format=png&color=EF4444"></ServiceCard>
+       
+      </div>
+  
+      <div class="mt-12 text-center">
+        <a
+          href="https://calendly.com/summitexteriorsny/roofing-estimate?hide_gdpr_banner=1&primary_color=ff0000&month=2024-01"
+          class="inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        >
+        Schedule A Consultation Now         </a>
+      </div>
+    </div>
+  </section>

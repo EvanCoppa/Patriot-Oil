@@ -1,0 +1,24 @@
+---
+interface Props {
+	title: string;
+  content: string;
+  href: string;
+  image_href: string;
+}
+
+const { title, content, href, image_href } = Astro.props;
+
+---
+
+<a
+class="bg-gray-800 block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-red-500/50 hover:shadow-red-500/10"
+href={href}
+>
+<img width="50" height="50" src={image_href} alt="steel-tent"/>
+
+<h2 class="mt-4 text-xl font-bold text-white">{title}</h2>
+
+<p class="mt-1 text-sm text-gray-300">
+{content} 
+</p>
+</a>
