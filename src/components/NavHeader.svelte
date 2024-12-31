@@ -42,7 +42,7 @@
         document.getElementById("progress-container").style.opacity = 1;
          let ancors =  document.querySelector("header").getElementsByTagName("a")
         console.log(ancors.length)
-        for (let i = 0; i < ancors.length - 8; i++) {
+        for (let i = 0; i < ancors.length - 6; i++) {
           ancors[i].style.color = "#6b7280";
         }
       } else {
@@ -170,7 +170,7 @@
       
       <div class="flex items-center gap-4">
         <div class="sm:flex sm:gap-4">
-          <div onclick="window.location.href='/booking'"
+          <div onclick="window.location.href='/contact'"
             class="rounded-md cursor-default bg-red-600 hover:bg-red-500 transition-all duration-200 px-5 py-2.5 text-sm font-semibold text-white shadow"
            >
             Schedule Now
