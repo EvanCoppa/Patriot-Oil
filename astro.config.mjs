@@ -6,6 +6,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.summitexteriors.com/',
+  site: 'https://patriotdiscountoilct.com/',
   integrations: [svelte(), tailwind(), sitemap()]
 });

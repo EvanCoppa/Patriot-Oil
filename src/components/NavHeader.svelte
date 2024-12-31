@@ -91,10 +91,10 @@
       <div class="md:flex md:items-center md:gap-12">
         <a class="block text-[#C2262C]" href="/">
           {#if isTransparent == true && window.location.pathname == "/"}
-           <img src="/logo-white.png" alt="Summit Exteriors Logo" class="w-[45px]" />
+           <img src="/logo-white.png" alt="Patriot Discount Oil Logo" class="w-[45px]" />
             
        {:else}
-          <img src="/logo.png" alt="Summit Exteriors Logo" class="w-[45px]" />
+          <img src="/logo.png" alt="Patriot Discount Oil Logo" class="w-[45px]" />
       {/if}        
     </a>
        </div>

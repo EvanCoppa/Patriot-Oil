@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.summitexteriors.com/sitemap-0.xml
+Sitemap: https://patriotdiscountoilct.com/sitemap-0.xml

@@ -68,7 +68,7 @@
       class="trasition-opacity duration-500 rounded-sm"
       src={imageUrl}
       style="opacity: {0 + imageOpacity}"
-      alt="Summit Exteriors Roofing Rochester"
+      alt="Patriot Discount Oil Middletown CT"
     />
   </div>
 </div>
