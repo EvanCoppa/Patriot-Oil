@@ -1,38 +1,63 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import CallToAction from "../components/Index/CallToAction.astro"
-import TeamCard from "../components/Cards/TeamCard.astro"
-
+import Layout from "../layouts/LocationLayout.astro";
 ---
 
-<Layout title="About Patriot Discount Oil" description="Affordable heating oil delivery and expert furnace maintenance in Middletown and central Connecticut. Patriot Discount Oil offers top-quality service, emergency heating solutions, and unbeatable prices. Trusted since 2013." heading="The Best Heating Oil in Connecticut " >
-<div class="flex flex-col mt-12">
-<div class="flex flex-col-reverse md:flex-row ">
-  <div class="md:w-1/2 m-auto p-4 max-w-[500px]">
-    <h1 class="text-6xl md:text-start text-center font-black mb-2">We Are Summit</h1>
-    <p>Founded in 2019 our CEO Andrew Delaus set out to change the roofing industry in Rochester. By creating a roofing system with the highest quality materials, we are trying to move the industry away from cut-and-paste roofs. You can trust us as the experts in roofing and exteriors with over +100 years of experience combined with our talented team.
-    </p>
-  </div>
-  <img src="/teamphoto.png" alt="Summit Exteriors Rochester Roof Install" class="md:w-1/2 md:h-auto h-[300px]">
-</div>
+<Layout
+  title="About Patriot Discount Oil"
+  description="Learn about Patriot Discount Oil, a family-owned heating oil delivery company serving central Connecticut since 2013."
+>
+  <!-- Main image for the about page -->
+
+  <!-- Main heading -->
+  <h1 class="text-center text-7xl">About Patriot Discount Oil</h1>
 
 
+  <img src="/gino-pulverenti.jpg" alt="About Patriot Discount Oil" />
 
-<div class="flex flex-col md:flex-row-reverse my-12 ">
-  
-  <div class="md:w-1/2 m-auto p-4 max-w-[500px]">
-    <h1 class="text-5xl font-black m-auto text-center mb-6">Our Mission</h1>
-    <p>At Summit, we truly believe that satisfying our customers comes before all else. We have been serving the Rochester Community since 2016. As we grow the Summit family and brand, we constantly incorporate new industry leading technology to better suit our customers! When choosing a company to trust with the task of building your roof, there is no place that will put your best interest first like we will. Call our office today and we will partner one of our exterior designers with you, to guide you through this process.
-    </p>
-  </div>
-  <div class="md:w-1/2">
-    <img src="/SummitExteriorsRochesterRoofInstall.png" alt="Summit Exteriors Rochester Roof Install" class=" w-[500px] mx-auto">
-  </div>
-</div>
+  <!-- Introduction paragraph -->
+  <p>
+    Patriot Discount Oil is a family-owned and operated heating oil delivery company proudly serving Middletown, Connecticut, and surrounding communities since 2013. Founded by retired Middletown Police Officer Gino Pulverenti and his wife, Cari-Mae, our company was built on a foundation of community service, integrity, and family values.
+  </p>
 
- 
+  <!-- Section highlighting the mission and values -->
+  <h2>Our Mission and Values</h2>
+
+  <p>
+    At Patriot Discount Oil, our mission is simple: to provide reliable, affordable heating oil delivery and exceptional customer care. We believe in putting our customers first and treating every home as if it were our own. With a focus on quality, transparency, and community commitment, we strive to exceed expectations at every step.
+  </p>
+
+  <!-- Section about the company history -->
+  <h2>Our Story</h2>
+
+  <p>
+    After dedicating years to public service, Gino Pulverenti sought another way to serve his community. Together with Cari-Mae, he established Patriot Discount Oil to provide local families with a trusted source for heating oil. Since our founding, we have grown to become a reliable partner for countless homeowners, earning a reputation for excellence and care.
+  </p>
 
 
-</div>
+  <!-- Section about services and commitment to quality -->
+  <h2>What We Offer</h2>
+
+  <ul>
+    <li>Affordable heating oil delivery</li>
+    <li>Emergency heating oil services</li>
+    <li>Furnace maintenance and tank inspections</li>
+    <li>Transparent pricing and unmatched customer care</li>
+  </ul>
+
+  <p>
+    With every service we provide, Patriot Discount Oil is committed to delivering the highest standards of quality and reliability. We understand the importance of a warm and safe home, and we work tirelessly to ensure your satisfaction.
+  </p>
+
+  <!-- Final call to action -->
+  <h2>Contact Us</h2>
+
+  <p>
+    Ready to learn more about Patriot Discount Oil or schedule your next delivery? Contact us today and experience the difference of working with a family-owned business that truly cares.
+  </p>
+  <a href="/contact" class="mr-auto block rounded-md px-8 py-3 max-w-[250px] font-medium text-white transition  bg-red-600 hover:bg-red-700"
+  > 
+   
+    Schedule a Consultation
+</a>
+      
 </Layout>
-

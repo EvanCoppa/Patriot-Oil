@@ -7,12 +7,63 @@ import Layout from "../layouts/Layout.astro"
  <div class="flex mt-12">
     <form class="max-w-screen-lg w-2/3 h-full mx-auto py-12"  target="_blank" action="https://formsubmit.co/9efd632881df83d662d220cdbeff8624" method="POST">
        
-        <div class="border-b border-gray-900/10 pb-12">
-          <h2 class="text-4xl font-bold leading-7 text-gray-900 mb-2">Contact Us</h2>
-          <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
-      
+        <div class=" pb-12">
+          <h3 class="text-4xl font-bold  text-gray-900 mb-2">Contact Us</h3>
+          
+          <div class="flex md:flex-row flex-col">
+
+          <div class=" p-4 rounded  max-w-md">
+            <h3 class="text-lg font-medium text-gray-800 mb-3">Our Info</h3>
+
+            <p class="mb-2">
+              <a 
+                href="https://www.google.com/maps?q=117+East+Main+Street,+Middletown,+CT+06457" 
+                target="_blank" 
+                class="text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                117 East Main Street, Middletown, CT. 06457
+              </a>
+            </p>
+            <p class="mb-2">
+              <a 
+                href="tel:8602624344" 
+                class="text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Phone – (860) 262-4344
+              </a>
+            </p>
+            <p>
+              <a 
+                href="mailto:Patoilofct@gmail.com" 
+                class="text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Email – Patoilofct@gmail.com
+              </a>
+            </p>
+          </div>
+                    <div class=" p-4 rounded max-w-sm">
+            <h3 class="text-lg font-medium text-gray-800 mb-3">Office Hours</h3>
+            <ul class="space-y-2">
+              <li class="flex justify-between items-center">
+                <span class="font-medium text-gray-700">Monday – Friday</span>
+                <span class="text-gray-600">8:00am – 6:00pm</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="font-medium text-gray-700">Saturday</span>
+                <span class="text-gray-600">8:00am – 1:00pm</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="font-medium text-gray-700">Sunday</span>
+                <span class="text-gray-600">Closed</span>
+              </li>
+            </ul>
+          </div>
+        </div>         
+         <h3 class="text-4xl mt-12 font-bold leading-7 text-gray-900 mb-2">Get A Fast Response</h3>
+
+
           <div class="mt-10 flex flex-col gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div class="flex justify-between w-full">
+            <div class="flex flex-col md:flex-row justify-between w-full">
               <div class="min-w-[30%]">
                 <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
                 <div class="mt-2">
