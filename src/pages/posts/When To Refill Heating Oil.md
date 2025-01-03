@@ -5,7 +5,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 author: 'Evan Coppa'
 image:
-    url: "/refill-heating-oil.webp"
+    url: "article/refill-heating-oil.jpg"
     alt: "Heating oil gauge showing low levels."
     
 date: "03-09-2024"

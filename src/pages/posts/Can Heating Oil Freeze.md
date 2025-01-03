@@ -5,7 +5,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 author: 'Evan Coppa'
 image:
-    url: "/heating-oil-freeze.webp"
+    url: "article/heating-oil-freeze.webp"
     alt: "Heating oil tank in snowy weather."
     
 date: "03-08-2024"

@@ -23,7 +23,7 @@ import '../styles/global.css';
  
 <Layout title={frontmatter.title} heading={frontmatter.description} description={frontmatter.description}>
   <main class="max-w-[90vw] lg:max-w-[50vw] mx-auto pt-12 md:mt-24 mt-18">
-    <img src={frontmatter.image.url} alt="rochester roofing hosue"/>
+    <img src={frontmatter.image.url} alt={frontmatter.image.alt}/>
     <slot />
 
   </main>

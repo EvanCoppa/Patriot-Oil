@@ -5,7 +5,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 author: 'Evan Coppa'
 image:
-    url: "/preparing-home-winter.webp"
+    url: "article/preparing-home-winter.webp"
     alt: "Cozy winter home with heating oil tank."
     
 date: "03-07-2024"

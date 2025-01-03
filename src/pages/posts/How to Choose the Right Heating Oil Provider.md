@@ -5,7 +5,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 author: 'Evan Coppa'
 image:
-    url: "/choosing-heating-oil-provider.webp"
+    url: "article/choosing-heating-oil-provider.webp"
     alt: "Heating oil delivery truck parked in front of a house."
     
 date: "03-06-2024"
