@@ -48,7 +48,97 @@ import Analytics from '@vercel/analytics/astro'
       image: "https://patriotdiscountoilct.com/public/oil-truck.jpg",
     }}
     
+    
   />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Patriot Discount Oil",
+      "description": "Affordable heating oil delivery and furnace maintenance services in Middletown, CT.",
+      "image": "https://yourwebsite.com/gino-pulverenti.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Middletown",
+        "addressRegion": "CT",
+        "postalCode": "06457",
+        "addressCountry": "US"
+      },
+      "telephone": "+18605551234",
+      "url": "https://yourwebsite.com",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "sameAs": [
+        "https://facebook.com/patriotoil",
+        "https://twitter.com/patriotoil"
+      ],
+      "mainEntityOfPage": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What areas do you serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We proudly deliver heating oil to Middletown, Portland, Cromwell, Durham, East Hampton, Haddam, Meriden, Rocky Hill, Higganum, and other central Connecticut towns."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I place an order for heating oil?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can place an order through our website or by calling our customer service team directly. Scheduling is easy and tailored to your needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer emergency heating oil delivery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! We provide emergency heating oil services to ensure your home stays warm, even during unexpected situations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide furnace maintenance services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we provide furnace maintenance, including tune-ups, cleaning, and inspections, to keep your system running efficiently."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What payment methods do you accept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We accept all major credit cards, debit cards, and online payment options for your convenience."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
     <ViewTransitions />
     <Analytics/>
    </head>
