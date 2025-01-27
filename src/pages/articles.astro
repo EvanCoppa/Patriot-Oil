@@ -1,19 +1,36 @@
 ---
- import ArticleCard from "../components/Cards/ArticleCard.astro";
- import Layout from "../layouts/Layout.astro";
-const allPosts = await Astro.glob('../pages/posts/*.md');
+import ArticleCard from "../components/Cards/ArticleCard.astro";
+import Layout from "../layouts/Layout.astro";
+const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
-<Layout title="Blog Posts" description="Affordable heating oil delivery and expert furnace maintenance in Middletown and central Connecticut. Patriot Discount Oil offers top-quality service, emergency heating solutions, and unbeatable prices. Trusted since 2013." heading="The Best Heating Oil in Connecticut " >
-  <div class="max-w-[90vw] mx-auto  mt-32">
-  <h1>Learn More About Oil In Connecticut</h1>
-  <p>gdfgfg</p>
-</div>
-<div class="flex flex-wrap gap-4 mx-auto max-w-[90vw] justify-around ">
- 
-  {allPosts.map(post => <ArticleCard href={post.url} image_href={post.frontmatter.image.url} content={post.frontmatter.content} title={post.frontmatter.title} date={post.frontmatter.date}/>)}
-
-
-</div>
- </Layout>
-
+<Layout
+  title="Blog Posts"
+  description="Affordable heating oil delivery and expert furnace maintenance in Middletown and central Connecticut. Patriot Discount Oil offers top-quality service, emergency heating solutions, and unbeatable prices. Trusted since 2013."
+  heading="The Best Heating Oil in Connecticut "
+>
+  <div class="max-w-[90vw] mx-auto mt-32">
+    <h1>Learn More About Oil In Connecticut</h1>
+    <p>
+      In this blog, we explore everything from current oil prices and delivery
+      schedules to energy-saving tips and maintenance best practices—all
+      tailored to Connecticut’s unique environment. Stay informed and empowered
+      with the latest updates on the Connecticut oil market, and discover how
+      you can optimize your heating system for comfort and efficiency
+      year-round.
+    </p>
+  </div>
+  <div class="flex flex-wrap gap-4 mx-auto max-w-[90vw] justify-around">
+    {
+      allPosts.map((post) => (
+        <ArticleCard
+          href={post.url}
+          image_href={post.frontmatter.image.url}
+          content={post.frontmatter.content}
+          title={post.frontmatter.title}
+          date={post.frontmatter.date}
+        />
+      ))
+    }
+  </div>
+</Layout>
