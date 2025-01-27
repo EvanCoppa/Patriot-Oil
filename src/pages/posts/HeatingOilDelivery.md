@@ -5,7 +5,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 author: 'Evan Coppa'
 image:
-    url: "/heating-oil-delivery.webp"
+    url: "article/heating-oil-delivery.webp"
     alt: "Heating oil delivery truck."
     
 date: "03-04-2024"
